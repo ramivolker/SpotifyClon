@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/d816c75497.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/spotifyicon.ico">
+    <link rel="stylesheet" href="stylesJS.css">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+<body>
+    <section class="options-bg">
+        <section class="options-wrapper">
+            <div class="option home-option">
+                <i class="opt-icon opt-icon-selected fa-solid fa-house"></i>
+                <span class="option-span option-span-selected">Home</span>
+            </div>
+    
+            <div class="option search-option">
+                <i class="opt-icon fa-solid fa-magnifying-glass"></i>
+                <span class="option-span">Search</span>
+            </div>           
+        </section>
+        <section class="library-wrapper">
+            <div class="your-library-wrapper">
+                <div class="library-container">
+                    <i class='bx bx-library opt-icon library-icon'></i>
+                    <span class="your-library">Your Library</span>
+                </div>
+                <i class="fa-solid fa-plus icon1"></i>
+                <i class="fa-solid fa-arrow-right icon1"></i>
+            </div>
+            <div class="filters-wrapper">
+                <span class="filter-opt">Playlists</span>
+                <span class="filter-opt">Artists</span>
+                <span class="filter-opt">Albums</span>
+                <span class="filter-opt">Podcasts & Shows</span>
+            </div>
+            <div class="search-library-wrapper">
+                <i class="tinyglass fa-solid fa-magnifying-glass"></i>
+                <div class="recents-wrapper">
+                    <span class="recents">Recents</span>
+                    <i class="recents-triangle fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+            <div class="multimedia-wrapper">
+                <div class="multimedia playlist">
+                    <img class="multimedia-img" src="/multimedia imgs/Liked Songs.jpg">
+                    <div class="multimedia-info-wrapper">
+                        <span class="multimedia-title">Liked Songs</span>
+                        <div class="multimedia-secondary-wrapper">
+                            <i class="thumbtack fa-solid fa-thumbtack"></i>
+                            <span class="multimedia-info typeofmultimedia">Playlist</span>
+                            <div class="multimedia-info mmdot"></div>
+                            <span class="multimedia-info nofsongs">937 songs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="multimedia artist listening">
+                    <img class="multimedia-img" src="/multimedia imgs/tnbh.png">
+                    <div class="multimedia-info-wrapper">
+                        <span class="multimedia-title">The Neighbourhood</span>
+                        <div class="multimedia-secondary-wrapper">
+                            <span class="multimedia-info typeofmultimedia">Artist</span>
+                        </div>
+                        <i class="listening-icon fa-solid fa-volume-low"></i>
+                    </div>
+                </div>
+
+                <div class="multimedia artist">
+                    <img class="multimedia-img" src="/multimedia imgs/deftones.jpg">
+                    <div class="multimedia-info-wrapper">
+                        <span class="multimedia-title">Deftones</span>
+                        <div class="multimedia-secondary-wrapper">
+                            <span class="multimedia-info typeofmultimedia">Artist</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="multimedia artist">
+                    <img class="multimedia-img" src="/multimedia imgs/tctt.jpg">
+                    <div class="multimedia-info-wrapper">
+                        <span class="multimedia-title">Too Close To Touch</span>
+                        <div class="multimedia-secondary-wrapper">
+                            <span class="multimedia-info typeofmultimedia">Artist</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="multimedia artist">
+                    <img class="multimedia-img" src="/multimedia imgs/saramalacara.jpg">
+                    <div class="multimedia-info-wrapper">
+                        <span class="multimedia-title">Saramalacara</span>
+                        <div class="multimedia-secondary-wrapper">
+                            <span class="multimedia-info typeofmultimedia">Artist</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="multimedia artist">
+                    <img class="multimedia-img" src="/multimedia imgs/mcr.png">
+                    <div class="multimedia-info-wrapper">
+                        <span class="multimedia-title">My Chemical Romance</span>
+                        <div class="multimedia-secondary-wrapper">
+                            <span class="multimedia-info typeofmultimedia">Artist</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="multimedia artist">
+                    <img class="multimedia-img" src="/multimedia imgs/daftpunk.jpg">
+                    <div class="multimedia-info-wrapper">
+                        <span class="multimedia-title">Daft Punk</span>
+                        <div class="multimedia-secondary-wrapper">
+                            <span class="multimedia-info typeofmultimedia">Artist</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="multimedia playlist">
+                    <img class="multimedia-img" src="/multimedia imgs/rm.png">
+                    <div class="multimedia-info-wrapper">
+                        <span class="multimedia-title">RM</span>
+                        <div class="multimedia-secondary-wrapper">
+                            <span class="multimedia-info typeofmultimedia">Playlist</span>
+                            <div class="multimedia-info mmdot"></div>
+                            <span class="multimedia-info nofsongs">rami</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="multimedia playlist">
+                    <img class="multimedia-img" src="/multimedia imgs/tts.jpg">
+                    <div class="multimedia-info-wrapper">
+                        <span class="multimedia-title">That's The Spirit</span>
+                        <div class="multimedia-secondary-wrapper">
+                            <span class="multimedia-info typeofmultimedia">Album</span>
+                            <div class="multimedia-info mmdot"></div>
+                            <span class="multimedia-info nofsongs">Bring Me The Horizon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="app-bg">
+        <section id="s2hw" class="s2-home-wrapper">
+            <div class="navbar-wrapper">
+                <i class="navbar-arrow fa-solid fa-chevron-left"></i>
+                <i class="navbar-arrow fa-solid fa-chevron-right"></i>
+                <div class="install-app-wrapper">
+                    <i class="install-icon fa-regular fa-circle-down"></i>
+                    <span class="install-app-text">Install App</span>
+                </div>
+                <img class="user-profile-photo" src="/rami.jpg">
+            </div>
+            <div class="good-day-title">Good evening</div>
+            <div class="multimedia-grid">
+                <div class="multimedia-grid-item">
+                    <img class="multimedia-grid-item-img" src="/multimedia imgs/Liked Songs.jpg">
+                    <span class="multimedia-grid-item-title">Liked Songs</span>
+                    <div class="multimedia-grid-item-playbutton-wrapper">
+                        <i class='bx bx-play multimedia-grid-item-playbutton'></i>
+                    </div>
+                </div>
+                <div class="multimedia-grid-item">
+                    <img class="multimedia-grid-item-img" src="/multimedia imgs/tnbh.png">
+                    <span class="multimedia-grid-item-title">The Neighbourhood</span>
+                    <div class="multimedia-grid-item-pausebutton-wrapper">
+                        <i class='multimedia-grid-item-pausebutton bx bx-pause' ></i>
+                    </div>
+                </div>
+                <div class="multimedia-grid-item">
+                    <img class="multimedia-grid-item-img" src="/multimedia imgs/ptv.jpg">
+                    <span class="multimedia-grid-item-title">Pierce The Veil</span>
+                    <div class="multimedia-grid-item-playbutton-wrapper">
+                        <i class='bx bx-play multimedia-grid-item-playbutton'></i>
+                    </div>
+                </div>
+                <div class="multimedia-grid-item">
+                    <img class="multimedia-grid-item-img" src="/multimedia imgs/cas.webp">
+                    <span class="multimedia-grid-item-title">Cigarettes After Sex</span>
+                    <div class="multimedia-grid-item-playbutton-wrapper">
+                        <i class='bx bx-play multimedia-grid-item-playbutton'></i>
+                    </div>
+                </div>
+                <div class="multimedia-grid-item">
+                    <img class="multimedia-grid-item-img" src="/multimedia imgs/fir.jpg">
+                    <span class="multimedia-grid-item-title">Falling In Reverse</span>
+                    <div class="multimedia-grid-item-playbutton-wrapper">
+                        <i class='bx bx-play multimedia-grid-item-playbutton'></i>
+                    </div>
+                </div>
+                <div class="multimedia-grid-item">
+                    <img class="multimedia-grid-item-img" src="/multimedia imgs/wrc.png">
+                    <span class="multimedia-grid-item-title">Who Really Cares</span>
+                    <div class="multimedia-grid-item-playbutton-wrapper">
+                        <i class='bx bx-play multimedia-grid-item-playbutton'></i>
+                    </div>
+                </div>
+            </div>
+            <div class="jump-back-in-title">Jump back in</div>
+            <div class="jumpback-grid">
+                <div class="jumpback-grid-item">
+                    <div style="background-image: url(/multimedia\ imgs/rm.png)" class="jumpback-grid-item-img album2">
+                        <div class="jumpback-grid-item-playbutton-wrapper">
+                            <i class='bx bx-play jumpback-grid-item-playbutton'></i>
+                        </div>
+                    </div>
+                    <span class="jumpback-grid-item-title">RM</span>
+                    <span class="jumpback-grid-item-info">By rami</span>
+                </div>
+                <div class="jumpback-grid-item">
+                    <div style="background-image: url(/multimedia\ imgs/cerati.jpg);" class="jumpback-grid-item-img artist2">
+                        <div class="jumpback-grid-item-playbutton-wrapper">
+                            <i class='bx bx-play jumpback-grid-item-playbutton'></i>
+                        </div>
+                    </div>
+                    <span class="jumpback-grid-item-title">Gustavo Cerati</span>
+                    <span class="jumpback-grid-item-info">Artist</span>
+                </div>
+                <div class="jumpback-grid-item">
+                    <div style="background-image: url(/multimedia\ imgs/am.jpg);" class="jumpback-grid-item-img album2">
+                        <div class="jumpback-grid-item-playbutton-wrapper">
+                            <i class='bx bx-play jumpback-grid-item-playbutton'></i>
+                        </div>
+                    </div>
+                    <span class="jumpback-grid-item-title">AM</span>
+                    <span class="jumpback-grid-item-info">Arctic Monkeys</span>
+                </div>
+                <div class="jumpback-grid-item">
+                    <div style="background-image: url(/multimedia\ imgs/starshopping.jpg);" class="jumpback-grid-item-img album2">
+                        <div class="jumpback-grid-item-playbutton-wrapper">
+                            <i class='bx bx-play jumpback-grid-item-playbutton'></i>
+                        </div>
+                    </div>
+                    <span class="jumpback-grid-item-title">Star Shopping</span>
+                    <span class="jumpback-grid-item-info">Lil Peep</span>
+                </div>
+                <div class="jumpback-grid-item">
+                    <div style="background-image: url(/multimedia\ imgs/billie.jpg);" class="jumpback-grid-item-img artist2">
+                        <div class="jumpback-grid-item-playbutton-wrapper">
+                            <i class='bx bx-play jumpback-grid-item-playbutton'></i>
+                        </div>
+                    </div>
+                    <span class="jumpback-grid-item-title">Billie Eilish</span>
+                    <span class="jumpback-grid-item-info">Artist</span>
+                </div>
+                <span class="jumpback-grid-show-all">Show all</span>
+            </div>
+            <div class="jump-back-in-title">Your favorite artists</div>
+            <div class="jumpback-grid">
+                <div class="jumpback-grid-item">
+                    <div style="background-image: url(/multimedia\ imgs/lilpeep.jpg)" class="jumpback-grid-item-img artist2">
+                        <div class="jumpback-grid-item-playbutton-wrapper">
+                            <i class='bx bx-play jumpback-grid-item-playbutton'></i>
+                        </div>
+                    </div>
+                    <span class="jumpback-grid-item-title">Lil Peep</span>
+                    <span class="jumpback-grid-item-info">Artist</span>
+                </div>
+                <div class="jumpback-grid-item">
+                    <div style="background-image: url(/multimedia\ imgs/nf.jpg);" class="jumpback-grid-item-img artist2">
+                        <div class="jumpback-grid-item-playbutton-wrapper">
+                            <i class='bx bx-play jumpback-grid-item-playbutton'></i>
+                        </div>
+                    </div>
+                    <span class="jumpback-grid-item-title">NF</span>
+                    <span class="jumpback-grid-item-info">Artist</span>
+                </div>
+                <div class="jumpback-grid-item">
+                    <div style="background-image: url(/multimedia\ imgs/radiohead.jpg);" class="jumpback-grid-item-img artist2">
+                        <div class="jumpback-grid-item-playbutton-wrapper">
+                            <i class='bx bx-play jumpback-grid-item-playbutton'></i>
+                        </div>
+                    </div>
+                    <span class="jumpback-grid-item-title">Radiohead</span>
+                    <span class="jumpback-grid-item-info">Artist</span>
+                </div>
+                <div class="jumpback-grid-item">
+                    <div style="background-image: url(/multimedia\ imgs/taylorswift.jpg);" class="jumpback-grid-item-img artist2">
+                        <div class="jumpback-grid-item-playbutton-wrapper">
+                            <i class='bx bx-play jumpback-grid-item-playbutton'></i>
+                        </div>
+                    </div>
+                    <span class="jumpback-grid-item-title">Taylor Swift</span>
+                    <span class="jumpback-grid-item-info">Artist</span>
+                </div>
+                <div class="jumpback-grid-item">
+                    <div style="background-image: url(/multimedia\ imgs/babasonicos.jpg);" class="jumpback-grid-item-img artist2">
+                        <div class="jumpback-grid-item-playbutton-wrapper">
+                            <i class='bx bx-play jumpback-grid-item-playbutton'></i>
+                        </div>
+                    </div>
+                    <span class="jumpback-grid-item-title">Babasónicos</span>
+                    <span class="jumpback-grid-item-info">Artist</span>
+                </div>
+                <span class="jumpback-grid-show-all">Show all</span>
+            </div>
+        </section>
+    </section>
+
+    <section class="npv-bg">
+        <section class="s3-npv-wrapper">
+            <div class="s3-multimedia-title-wrapper">
+                <span class="s3-multimedia-title">The Neighbourhood</span>
+                <i class="s3-x fa-solid fa-x"></i>
+            </div>
+            <img class="s3-multimedia-img" src="/multimedia imgs/wipedout.jpg">
+            <div class="s3-multimedia-info-wrapper">
+                <div class="s3-multimedia-info-container">
+                    <span class="s3-multimedia-info-title">Cry Baby</span>
+                    <span class="s3-multimedia-info-subtitle">The Neighbourhood</span>
+                </div>
+                <div class="s3-multimedia-icons">
+                    <i class="s3-heart fa-solid fa-heart"></i>
+                    <i class="s3-ellipsis fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="s3-multimedia-wallpaper" style="background-image: url(/multimedia\ imgs/tnbhwallpaper.webp);">
+                <div class="s3-multimedia-verified-wrapper">
+                    <i class='verified-badge bx bxs-badge-check'></i>
+                    <div class="verified-badge-fill"></div>
+                    <span class="s3-multimedia-verified-text">Verified Artist</span>
+                </div>
+                <span class="s3-multimedia-listeners">31,608,941 monthly listeners</span>
+                <p class="s3-multimedia-artist-info">Since 2011, California quintet The Neighbourhood, with  Rutherford (vocals),
+                     Zach Abels (guitar), Jeremy Freedman (guitar), Mikey Margott (bass), and Brandon Fried (drums), have zigged and
+                      zagged past conventions and expectations.</p>
+            </div>
+            <div class="s3-queue">
+                
+            </div>
+        </section>
+    </section>
+    <section class="control-bar-bg">
+        <div class="s4-song-wrapper">
+            <div class="s4-song-img" style="background-image: url(./multimedia\ imgs/wipedout.jpg)">
+                <i class="s4-chevron-down fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="s4-song-info-wrapper">
+                <h3 class="s4-song-title">The Beach</h3>
+                <p class="s4-song-artist">The Neighbourhood</p>
+            </div>
+            <i class="s3-heart fa-solid fa-heart"></i>
+            <img class="s4-pip" src="/multimedia imgs/pipsvg.svg">
+        </div>
+        <div class="s4-player">
+            <div class="s4-controls-wrapper">
+                <i class="s4-control1 s4-button-clicked fa-solid fa-shuffle"><div class="s4-playview-dot"></div></i>
+                <i class="s4-control1 fa-solid fa-backward-step"></i>
+                <i class="s4-control2 fa-solid fa-circle-pause"></i>
+                <i class="s4-control1 fa-solid fa-forward-step"></i>
+                <i class='s4-control1 loop180 bx bx-repeat'></i>
+            </div>
+            <div class="s4-timenavbar-wrapper">
+                <p class="s4-time-current">1:53</p>
+                <div class="s4-time-bar"></div>
+                <p class="s4-time-total">4:15</p>
+            </div>
+        </div>
+        <div class="s4-buttons-wrapper">
+            <i class='s4-button s4-button-clicked bx bx-play-circle'><div class="s4-playview-dot"></div></i>
+            <i class="s4-button fa-solid fa-microphone"></i>
+            <i class="s4-button fa-solid fa-bars-staggered"></i>
+            <i class="s4-button fa-solid fa-computer"></i>
+            <i class="s4-button volumebtn fa-solid fa-volume-low"></i>
+            <div class="s4-volume-bar"></div>
+            <i class="s4-button fa-solid fa-up-right-and-down-left-from-center"></i>
+        </div>
+    </section>
+</body>
+</html>
