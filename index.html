@@ -47,7 +47,7 @@
                 </div>
             </div>
             <div class="multimedia-wrapper">
-                <div class="multimedia playlist">
+                <div class="multimedia playlist listening">
                     <img class="multimedia-img" src="./multimedia imgs/Liked Songs.jpg">
                     <div class="multimedia-info-wrapper">
                         <span class="multimedia-title">Liked Songs</span>
@@ -57,17 +57,17 @@
                             <div class="multimedia-info mmdot"></div>
                             <span class="multimedia-info nofsongs">937 songs</span>
                         </div>
+                        <i class="listening-icon fa-solid fa-volume-low"></i>
                     </div>
                 </div>
 
-                <div class="multimedia artist listening">
+                <div class="multimedia artist">
                     <img class="multimedia-img" src="./multimedia imgs/tnbh.png">
                     <div class="multimedia-info-wrapper">
                         <span class="multimedia-title">The Neighbourhood</span>
                         <div class="multimedia-secondary-wrapper">
                             <span class="multimedia-info typeofmultimedia">Artist</span>
                         </div>
-                        <i class="listening-icon fa-solid fa-volume-low"></i>
                     </div>
                 </div>
 
@@ -311,7 +311,7 @@
                 <span class="s3-multimedia-title">The Neighbourhood</span>
                 <i class="s3-x fa-solid fa-x"></i>
             </div>
-            <img class="s3-multimedia-img" src="./multimedia imgs/wipedout.jpg">
+            <div class="s3-multimedia-img"></div>
             <div class="s3-multimedia-info-wrapper">
                 <div class="s3-multimedia-info-container">
                     <span class="s3-multimedia-info-title">Cry Baby</span>
@@ -322,7 +322,7 @@
                     <i class="s3-ellipsis fa-solid fa-ellipsis"></i>
                 </div>
             </div>
-            <div class="s3-multimedia-wallpaper" style="background-image: url(./multimedia\ imgs/tnbhwallpaper.webp);">
+            <div class="s3-multimedia-wallpaper">
                 <div class="s3-multimedia-verified-wrapper">
                     <i class='verified-badge bx bxs-badge-check'></i>
                     <div class="verified-badge-fill"></div>
@@ -351,7 +351,7 @@
     </section>
     <section class="control-bar-bg">
         <div class="s4-song-wrapper">
-            <div class="s4-song-img" style="background-image: url(./multimedia\ imgs/wipedout.jpg)">
+            <div class="s4-song-img">
                 <i class="s4-chevron-down fa-solid fa-chevron-down"></i>
             </div>
             <div class="s4-song-info-wrapper">
@@ -364,15 +364,21 @@
         <div class="s4-player">
             <div class="s4-controls-wrapper">
                 <i class="s4-control1 s4-button-clicked fa-solid fa-shuffle"><div class="s4-playview-dot"></div></i>
-                <i class="s4-control1 fa-solid fa-backward-step"></i>
-                <i class="s4-control2 fa-solid fa-circle-pause"></i>
-                <i class="s4-control1 fa-solid fa-forward-step"></i>
+                <i class="s4-control1 fa-solid fa-backward-step s4-lastsong-control"></i>
+                <div class="s4-playbutton-container">
+                    <i class="s4-control2 fa-solid fa-circle-pause"></i>
+                </div>
+                <i class="s4-control1 fa-solid fa-forward-step s4-nextsong-control"></i>
                 <i class='s4-control1 loop180 bx bx-repeat'></i>
             </div>
             <div class="s4-timenavbar-wrapper">
-                <p class="s4-time-current">1:53</p>
+                <div class="s4-time-container">
+                    <p class="s4-time-current">1:53</p>
+                </div>
                 <div class="s4-time-bar"></div>
-                <p class="s4-time-total">4:15</p>
+                <div class="s4-time-container">
+                    <p class="s4-time-total">4:15</p>
+                </div>
             </div>
         </div>
         <div class="s4-buttons-wrapper">
@@ -386,4 +392,10 @@
         </div>
     </section>
 </body>
+<section class="mobile-body">
+    <div class="mobile-container">
+        <i class="fa-solid fa-computer mobile-pc-icon"></i>
+    <h4 class="mobile-h4">Por favor ingrese desde una computadora o maximice la pestaña.</h4>
+    </div>
+</section>
 </html>

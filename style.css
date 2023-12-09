@@ -27,6 +27,7 @@
     --gray: #222;
     --spotifygreen: #1ed760;
     --verifiedblue: #3d91f4;
+    --timelineWidth: 0%;
 }
 
 *{
@@ -351,7 +352,7 @@ body{
 
 .s2-home-wrapper{
     background-image: var(--bgcolor1);
-    background-color: red;
+    background-color: #000;
     width: 100%;
     height: 100%;
     height: calc(100vh - 88px - 8px);
@@ -748,9 +749,12 @@ body{
 .s3-multimedia-img{
     width: 100%;
     aspect-ratio: 1/1;
+    padding-top: 100%;
     border-radius: 16px;
     margin-top: 20px;
     cursor: pointer;
+    background-image: url("./multimedia imgs/wipedout.jpg");
+    background-size: cover;
 }
 
 .s3-multimedia-info-wrapper{
@@ -821,9 +825,10 @@ body{
     background-size: cover;
     margin-top: 1rem;
     border-radius: 8px;
-    background-position: 0 -50px;
+    background-position: 50% 50%;
     position: relative;
     transition: scale 0.3s ease;
+    background-image: url(./multimedia\ imgs/tnbhwallpaper.webp);
 }
 
 .s3-multimedia-wallpaper:hover{
@@ -880,7 +885,7 @@ body{
     font-family: gotham-book;
     color: var(--hardwhite);
     z-index: 0;
-    margin: auto 16px 12px 16px;
+    margin: 144px 16px 12px 16px;
     font-size: 15px;
 }
 
@@ -1010,6 +1015,7 @@ body{
     background-size: cover;
     cursor: pointer;
     display: flex;
+    background-image: url(./multimediaimgs/wipedout.jpg);
 }
 
 .s4-song-img:hover .s4-chevron-down{
@@ -1087,12 +1093,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 0.7rem;
 }
 
 .s4-control1{
     color: var(--softwhite);
     font-size: 1.2rem;
+    padding: 0.5rem;
 }
 
 .s4-control1:hover{
@@ -1103,10 +1110,35 @@ body{
     color: var(--hardwhite);
     font-size: 2.1rem;
     transition: scale 0.1s ease;
+    margin: 0.2rem;
 }
 
 .s4-control2:hover{
     scale: 1.06;
+}
+
+.s4-playbuttonjs{
+    color: #000;
+    margin: 0;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+}
+
+.s4-playbutton-container{
+    transition: scale 0.3s ease-in-out;
+}
+
+.s4-playbutton-container-js{
+    background-color: var(--hardwhite);
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    position: relative;
+    margin: 1.5px;
+    padding: 1px;
+    width: 35px;
+    height: 35px;
+    box-sizing: unset;
 }
 
 .s4-timenavbar-wrapper{
@@ -1121,6 +1153,18 @@ body{
     font-family: gotham-book;
     color: var(--softwhite);
     font-size: 13px;
+}
+
+.s4-time-container{
+    width: 30px;
+    min-width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.s4-time-container:last-child{
+    justify-content: flex-start;
 }
 
 .s4-time-bar{
@@ -1143,7 +1187,7 @@ body{
     z-index: 1;
     border-radius: 4px;
     background-color: var(--softwhite);
-    width: 44%;
+    width: var(--timelineWidth);
 }
 
 .s4-time-bar:hover::before{
@@ -1202,7 +1246,7 @@ body{
     border-radius: 50%;
     background-color: var(--spotifygreen);
     position: absolute;
-    translate: 180% 2px;
+    translate: 177% 2px;
 }
 
 .loop180{
@@ -1234,6 +1278,11 @@ body{
 .s4-volume-bar:hover::before{
     background-color: var(--spotifygreen);
 }
+
+.mobile-body{
+    display: none;
+}
+
 
 
 @media screen and (max-width:1850px) {
@@ -1321,6 +1370,7 @@ body{
     }
     .app-bg{
         grid-column: 2/4;
+        padding-right: 8px;
     }
     .jumpback-grid{
         grid-template-columns: repeat(5,1fr);
@@ -1358,5 +1408,43 @@ body{
 
     .control-bar-bg{
         grid-template-columns: 340px 1fr 320px;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .options-bg, .app-bg, .npv-bg, .control-bar-bg{
+        display: none;
+    }
+
+    .mobile-body{
+        display: flex;
+        color: red;
+    }
+
+    .mobile-h4{
+        color: var(--softwhite);
+        font-family: montserrat;
+        font-size: 18px;
+        text-align: center;
+        max-width: 85vw;
+    }
+
+    body{
+        background-color: var(--softblack);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-pc-icon{
+        color: var(--spotifygreen);
+        font-size: 5rem;
+    }
+
+    .mobile-container{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        gap:2.2rem
     }
 }
